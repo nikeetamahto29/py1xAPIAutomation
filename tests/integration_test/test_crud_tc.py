@@ -1,11 +1,14 @@
-from source.constants.api_constants import BASE_URL ,APIconstants
+from src.constants.api_constants import BASE_URL, APIConstants, base_url
 
+import requests
 
 def test_crud():
-  print(BASE_URL)
+    print(BASE_URL)
 
- # url_direc_func = base_url()
- # print(url_direc_func)
+    url_direc_func = base_url()
+    print(url_direc_func)
 
-  url_class = APIconstants.base_url()
-  print(url_class)
+    requests.get()
+
+    url_class = APIConstants.base_url()
+    print(url_class)
