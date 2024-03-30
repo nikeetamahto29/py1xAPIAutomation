@@ -1,10 +1,9 @@
 # Add your constants here
 
 BASE_URL = "https://restful-booker.herokuapp.com"
-#
-#
+
 def base_url():
-   return "https://restful-booker.herokuapp.com"
+     return "https://restful-booker.herokuapp.com"
 
 
 class APIConstants(object):

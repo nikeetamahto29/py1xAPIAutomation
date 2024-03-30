@@ -33,5 +33,5 @@ class TestCreateBooking(object):
     def test_create_booking_tc4(self):
             # URL, Headers, Payload,
             response = post_requests(url=APIConstants.url_create_booking(), auth=None, headers=common_headers_json(),
-                                     payload="This is Text", in_json=False)
-            verify_http_status_code(response, 500)
+                                     payload="This_is_text", in_json=False)
+            verify_http_status_code(response, 400)

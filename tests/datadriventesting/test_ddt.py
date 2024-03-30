@@ -5,6 +5,7 @@
 # Read the Excel - openpyxl
 import openpyxl
 import requests
+import pytest
 
 from src.constants.api_constants import APIConstants
 from src.helpers.utils import common_headers_json
@@ -33,7 +34,7 @@ def make_request_auth(username, password):
 
 
 def test_post_create_token():
-    file_path = "C:\Users\nikee\PycharmProjects\py1xAPIAutomation\tests\datadriventesting\test_ddt.py\testdata_ddt.xlsx"
+    file_path = "C:\Users\nikee\Downloads\testdata_ddt.xlsx"
     credentials = read_credentials_from_excel(file_path)
 
     for user_cred in credentials:
